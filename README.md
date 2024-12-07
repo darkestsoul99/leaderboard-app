@@ -23,12 +23,8 @@ You can start the application in two ways:
 ### Using the run script
 For Linux/Mac:
 
-1. Clone the repository
-2. Create a `.env file based on `.env.example`
-3. Run with Docker:
-
 ```bash
-docker-compose up --build
+./run.sh
 ```
 
 For Windows:
