@@ -20,7 +20,8 @@ A scalable leaderboard system built with Node.js, Redis, and MongoDB.
 
 You can start the application in two ways:
 
-### Using the run script (Linux/Mac)
+### Using the run script
+For Linux/Mac:
 
 1. Clone the repository
 2. Create a `.env file based on `.env.example`
@@ -30,6 +31,12 @@ You can start the application in two ways:
 docker-compose up --build
 ```
 
+For Windows:
+
+```bash
+.\run.bat
+```
+
 ### Manual setup
 1. Clone the repository
 2. Create a `.env` file based on `.env.example`
@@ -37,12 +44,6 @@ docker-compose up --build
 
 ```bash
 docker-compose up --build
-```
-
-### Using the run script (Windows)
-
-```bash
-run.bat
 ```
 
 ## API Documentation
