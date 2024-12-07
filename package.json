@@ -1,0 +1,29 @@
+{
+  "name": "leaderboard-system",
+  "version": "1.0.0",
+  "description": "A scalable leaderboard system",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "mocha tests/**/*.test.js --exit",
+    "test:watch": "mocha tests/**/*.test.js --watch"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^4.0.0",
+    "mongoose": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "dotenv": "^10.0.0",
+    "express-validator": "^6.12.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mongodb-memory-server": "^8.0.0",
+    "redis-mock": "^0.56.3"
+  }
+}
