@@ -35,9 +35,10 @@ class LeaderboardService {
         const key = `game:${gameId}:leaderboard`;
         const start = (page - 1) * limit;
         const stop = start + limit - 1;
-
-        const results = await this.redis.zRevRangeWithScores(key, start, stop);
-        
+    
+        // Fetch entries within the rank range
+        const results = await this.redis.zRangeWithScores(key, start, stop, { REV: true });
+    
         return results.map((item, index) => ({
             rank: start + index + 1,
             userId: item.value,
